@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Counter</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div class="card">
+        <section>
+            <h1>Welcome to Calorie Counter</h1>
+            <p>Track your daily calorie intake and expenditure to maintain a healthy lifestyle.</p>
+            <h2>Calorie Conter</h2>
+        </section>
+        <form>
+            <label for="bd">Budget</label>
+            <input type="number" id="bd" name="bd" placeholder="Daily calorie budget"><br>
+            <fieldset>
+                <legend>
+                    <label for="br">Breakfast</label>
+                </legend>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <label for="lc">Lunch</label>
+                </legend>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <label for="dn">Dinner</label>
+                </legend>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <label for="sn">Snacks</label>
+                </legend>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <label for="ex">Exercise</label>
+                </legend>
+            </fieldset><br>
+            <label for="add">Add food or exercise:</label>
+            <input list="fE">
+            <datalist id="fE">
+                <option value="Breakfast"><input type="radio"></option>
+                <option value="Lunch"><input type="radio"></option>
+                <option value="Dinner"><input type="radio"></option>
+                <option value="Snacks"><input type="radio"></option>
+                <option value="Exercise"><input type="radio"></option>
+            </datalist><br><br>
+
+            <input type="button" value="Add Entry"><br><br>
+
+            <input type="button" value="Calculate Remaining Calories">
+
+            <input type="button" value="clear"><br><br>
+
+
+        </form>
+    </div>
+
+    <script src="script1.js"></script>
+
+</body>
+
+</html>
