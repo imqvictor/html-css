@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    --btc: rgb(38, 50, 226);
+    --col: #fff;
+    --inpcl: #a1a1a1;
+    --inbg: rgb(25, 25, 25);
+
+    font-family: 'Inter', sans-serif;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid var(--inpcl);
+    width: 300px;
+    height: 400px;
+    color: var(--col);
+    padding: 0.7rem;
+    align-items: center;
+
+}
+
+.card h1 {
+    font-family: 'Pacifico', sans-serif;
+    font-size: 25px;
+    font-weight: 100px;
+}
+
+.card p {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--inpcl);
+    opacity: 1;
+}
+
+.card>button:hover {
+    cursor: pointer;
+    background-color: rgb(38, 50, 226, 0.8);
+}
+
+
+.fbtn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btc);
+    border: none;
+    opacity: 0.7;
+    gap: 0.3rem;
+}
+
+.fbtn>p {
+    color: var(--col);
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.or {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 0.5rem;
+    text-transform: uppercase;
+}
+
+.or>div {
+    height: 0.09rem;
+    background-color: var(--inpcl);
+    flex: 1;
+
+}
+
+.inpt {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inpt input {
+    width: 100%;
+    padding: 5px 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--inbg);
+}
+
+.inpt input::placeholder {
+    color: var(--col);
+    opacity: 0.7;
+}
+
+.s-up {
+    width: 100%;
+    padding: 0.2rem;
+    border: none;
+    background-color: var(--btc);
+    color: var(--col);
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.7;
+}
