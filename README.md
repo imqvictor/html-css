@@ -3,9 +3,9 @@
 This repository contains my practice projects built using HTML and CSS.
 
 📁 Projects
-- Landing Page
-- Login Form
-- Portfolio Template
+- Login-page
+- Calorie-counter
+- Insta-login
 
 🎯 Purpose
 
