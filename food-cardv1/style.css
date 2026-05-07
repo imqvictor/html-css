@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --bgc: #3f9065;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background-color: red;
+}
+
+.card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    gap: 2px;
+}
+
+.img-wrapper {
+    width: 100%;
+    mask-image: url(images/mask-bg.png);
+    background-color: #fff;
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    margin-bottom: 0.5rem;
+}
+
+.img-wrapper img {
+    width: 100%;
+}
+
+.actions {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    transform: translateX(60px);
+}
+
+.actions>div {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+
+}
+
+.top>p {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background-color: rgb(255, 183, 0);
+    transform: translateX(-50%);
+    padding: 4px 8px;
+    border-radius: 15px;
+}
+
+.para {
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.card h4 {
+    color: #fff;
+}
+
+.card:hover .img-wrapper {
+    background-color: var(--bgc);
+    transform: translateX(0);
+}
+
+.card:hover .actions {
+    transform: translateX(0);
+    transition: 0.9s;
+    opacity: 1;
+}
